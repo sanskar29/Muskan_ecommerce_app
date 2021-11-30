@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.CheckoutActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                android:elevation="24dp"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            <ImageButton
+                    android:onClick="toCheckoutActivtiy"
+                    android:id="@+id/searchImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@drawable/ripple_background"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_back_button"/>
+
+            <TextView
+                    android:textColor="#1E88E5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CHECKOUT"
+                    android:textSize="25sp"
+                    android:id="@+id/toolbar_title"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+        </android.support.v7.widget.Toolbar>
+
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+            <View
+                    android:alpha="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="6dp"
+                    android:background="@drawable/toolbar_shadow"/>
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_payment"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:srcCompat="@drawable/ic_done_fab"/>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

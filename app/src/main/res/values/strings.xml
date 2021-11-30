@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Muskan</string>
+    <string name="title_activity_tool_bar">ToolBarActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_checkout">activity_checkout</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+</resources>
